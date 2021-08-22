@@ -1,6 +1,9 @@
 name: JSDoc build on GitHub repo
 
-on: [push, workflow_dispatch]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   deploy:
@@ -11,8 +14,8 @@ jobs:
         with:
           ref: 02-solution-study-case
       
-      - name: Build
-        uses: andstor/jsdoc-action@v1
+      - name: JSDoc Action
+        uses: andstor/jsdoc-action@v1.2.0
         with:
           source_dir: ./assets
           recurse: true
