@@ -8,6 +8,6 @@ Alur Fitur Login:
 4. Logout untuk kembali ke Login
 
 ## Dokumen
-- (SKPL)[./skpl.md]
+- [SKPL](./skpl.md)
 - Flowchart
 ![Flowchart](./flowchart.png)
