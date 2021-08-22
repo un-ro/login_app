@@ -11,8 +11,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        with:
-          ref: 02-solution-study-case
       
       - name: JSDoc Action
         uses: andstor/jsdoc-action@v1.2.0
