@@ -10,24 +10,40 @@
  * @constant {HTMLElement}
  */
 const loginFormElement = document.querySelector('#loginForm');
+/** 
+ * Membuat variabel untuk Input Email
+ * @constant {HTMLElement}
+ */
 const inputEmailElement = document.querySelector('#inputEmail');
+/** 
+ * Membuat variabel untuk Input Password
+ * @constant {HTMLElement}
+ */
 const inputPasswordElement = document.querySelector('#inputPassword');
 
 /**
- * Membuat variabel email dan password untuk check input user saat login
+ * Membuat variabel expectedEmail untuk check input email saat login
  * @constant {string}
  */
 const expectedEmail = 'admin@dicoding.com';
+/**
+ * Membuat variabel expectedPassword untuk check input password saat login
+ * @constant {string}
+ */
 const expectedPassword = 'superpassword';
 
 loginFormElement.addEventListener('submit', function(event) {
   event.preventDefault();
 
   /**
-   * Membuat variabel untuk menyimpan nilai email dan password yang user inputkan
+   * Membuat variabel untuk menyimpan nilai email yang user inputkan
    * @constant {string}
    */
   const email = inputEmailElement.value;
+  /**
+   * Membuat variabel untuk menyimpan nilai email yang user inputkan
+   * @constant {string}
+   */
   const password = inputPasswordElement.value;
   if (email == expectedEmail && password == expectedPassword) {
     goToHome();
